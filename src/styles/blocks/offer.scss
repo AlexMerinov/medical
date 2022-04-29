@@ -1,0 +1,83 @@
+.offer {
+  font-family: 'Mulish';
+  margin-bottom: 120px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &__main {
+    width: 669px;
+    height: 511px;
+    padding: 49px 31px;
+    background: url(../../images/modern.jpg) center center/cover no-repeat;
+  }
+
+  &__other {
+    width: 485px;
+    height: 247px;
+    padding: 52px 24px;
+    
+    &--first {
+      background: url(../../images/geometric.jpg) center center/cover no-repeat;
+      margin-bottom: 17px;
+    }
+   
+    &--second {
+      background: url(../../images/minimal.jpg) center center/cover no-repeat;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+    line-height: 26px;
+    color: #555555;
+    margin-bottom: 10px;
+    &--mini {
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__desc {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: $main-color;
+    margin-bottom: 13px;
+    &--mini {
+      font-weight: 600;
+      margin-bottom: 9px;
+    }
+  }
+
+  &__link{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #757575;
+    text-decoration: none;
+  }
+
+  &__icon {
+    margin-left: 3px;
+    width: 11px;
+    height: 9px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #757575;
+      }
+}
