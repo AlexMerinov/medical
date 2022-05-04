@@ -45,7 +45,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    .card {
+   .card {
       position: relative;
       width: 270px;
       height: 387px;
@@ -204,8 +204,38 @@
                   right: 5px;
                }
             }
-            }
+         }
       }
    }
 }
+}
+
+@media (max-width: 567px) {
+   .trending {
+      &__title {
+         font-size: 24px;
+         line-height: 30px;
+         margin-bottom: 40px;
+      }
+      .tabs {
+         &__tab {
+            text-align: center;
+            margin: 0;
+            min-height: 40px;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $main-color;
+            color: #fff;
+            border: 1px solid #fff;
+            transition: all 0.2s linear;
+            &--active {
+               color: $main-color;
+               background-color: #fff;
+               box-shadow: 0 0 5px 5px rgba(37, 44, 43, 0.2) inset;
+            }
+         }
+      }
+   }
 }
