@@ -56,5 +56,23 @@
          text-align: center;
          color: #515151;
       }
+
+      .swiper-button-next {
+         color: #d9d9d9;
+         transition: all 0.3s ease;
+         &:hover {
+            color: $main-color;
+            transform: scale(1.1);
+         }
+      }
+
+      .swiper-button-prev {
+         color: #d9d9d9;
+         transition: all 0.3s ease;
+         &:hover {
+            color: $main-color;
+            transform: scale(1.1);
+         }
+      }
    }
 }

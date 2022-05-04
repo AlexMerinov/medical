@@ -3,7 +3,13 @@
    width: 270px;
    height: 387px;
    margin-bottom: 45px;
-
+   &:hover {
+      .card__image {
+         img {
+            filter: brightness(80%);
+         }
+      }
+   }
 
 
    &__image {
@@ -12,6 +18,7 @@
      margin-bottom: 15px;
      img {
        width: 100%;
+       transition: all 0.3s ease-in-out;
      }
    }
    &__style {
@@ -56,6 +63,11 @@
        display: flex;
        align-items: center;
        justify-content: space-between;
+       &__icon {
+         width: 10.53px;
+         height: 9.58px;
+         fill: $main-color;
+       }
      }
    &__label {
      font-family: 'Mulish';
@@ -84,6 +96,11 @@
    }
    .activities {
      display: none;
+     &__icon {
+        max-width: 21px;
+        max-height: 21px;
+        fill: #757575;
+     }
    }
    &:hover {
      .activities {

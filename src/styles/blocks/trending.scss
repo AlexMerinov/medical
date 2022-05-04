@@ -25,9 +25,16 @@
       color: #C2C2C2;  
       margin: 0 35px;
       cursor: pointer;
+      text-decoration: none;
       &--active {
         color: $main-color;
       }
+    }
+    &__slider {
+       display: none;
+       &--active {
+          display: block;
+       }
     }
   }
   
@@ -154,4 +161,51 @@
     }
   }
 
+}
+
+@media (max-width: 1200px) {
+   .trending {
+      .slider {
+         &__pages {
+            justify-content: space-around;
+         }
+      }
+   }
+}
+
+@media (max-width: 768px) {
+   .trending {
+      .tabs {
+         &__pagination {
+            margin-bottom: 50px;
+         }
+         &__tab {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0 20px;
+         }
+      }
+      .slider {
+         &__pages {
+            justify-content: space-around;
+         }
+         .card {
+            width: 230px;
+            height: 300px;
+            &__image {
+               height: 180px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               overflow: hidden;
+            &:hover {
+               .activities {
+                  top: 0;
+                  right: 5px;
+               }
+            }
+            }
+      }
+   }
+}
 }

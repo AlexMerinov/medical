@@ -44,7 +44,9 @@
             &__item {
                &:hover {
                   background-color: $main-color;
-                  fill: #fff
+                  .activities__icon {
+                     fill: #fff;
+                  }
                }
             }
          }

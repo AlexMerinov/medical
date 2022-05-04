@@ -13,6 +13,10 @@
     height: 511px;
     padding: 49px 31px;
     background: url(../../images/modern.jpg) center center/cover no-repeat;
+    transition: filter 0.5s linear;
+    &:hover {
+      filter: brightness(90%);
+    }
   }
 
   &__other {
@@ -23,10 +27,18 @@
     &--first {
       background: url(../../images/geometric.jpg) center center/cover no-repeat;
       margin-bottom: 17px;
+      transition: filter 0.5s linear;
+      &:hover {
+        filter: brightness(90%);
+      }
     }
    
     &--second {
       background: url(../../images/minimal.jpg) center center/cover no-repeat;
+      transition: filter 0.5s linear;
+      &:hover {
+        filter: brightness(90%);
+      }
     }
   }
 
@@ -62,22 +74,79 @@
     align-items: center;
     font-weight: 400;
     font-size: 16px;
-    line-height: 26px;
     display: flex;
     align-items: center;
     color: #757575;
     text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+       font-weight: 800;
+    }
   }
 
   &__icon {
+     display: block;
     margin-left: 3px;
     width: 11px;
     height: 9px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    display: flex;
-    align-items: center;
-    color: #757575;
+    fill: #757575;
       }
+}
+
+@media ( max-width: 1200px ) {
+   .offer {
+      &__main {
+         width: 470px;
+      }
+      &__other {
+         width: 470px;
+      }
+   }
+
+}
+
+@media ( max-width: 992px ) {
+   .offer {
+      margin-bottom: 90px;
+      &__main {
+         padding: 40px 25px;
+         width: 230px;
+         height: 450px;
+      }
+      &__right {
+         width: 475px;
+         display: flex;
+         justify-content: space-between;
+         height: 450px;
+      }
+      &__other {
+         padding: 40px 25px;
+         height: 100%;
+         width: 230px;
+      }
+   }
+}
+
+@media ( max-width: 768px ) {
+   .offer {
+      &__wrapper {
+         flex-direction: column;
+      }
+      &__main {
+         padding: 30px 15px;
+         width: 100%;
+         height: 200px;
+         margin-bottom: 20px;
+      }
+      &__right {
+         width: 100%;
+         flex-direction: column;
+         height: 420px;
+      }
+      &__other {
+         padding: 30px 15px;
+         width: 100%;
+         height: 200px;
+      }
+   }
 }
