@@ -26,146 +26,170 @@
 <!-- Main -->
 <main class="main">
   <header class="header">
-    <div class="header-top">
-      <div class="container container--header">
-        <div class="header-top__wrapper">
-          <span class="header__welcome">Welcome to our online shop</span>
-          <div class="header__settings">
-            <select name="lang" id="#" class="header__lang">
-              <option>English (USD)</option>
-              <option>Russian (RUB)</option>
-            </select>
-            <span></span>
-            <a href="#" class="header__login">Login or Sign up</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="header-main">
-      <div class="container">
-        <div class="header-main__wrapper">
+    <div class="container container--header-mobile">
+      <div class="header-mobile">
+        <div class="header-mobile__wrapper">
           <div class="header__logo">
             <img src="images/Logo.png" alt="logo" />
           </div>
-          <form action="#" class="header-form">
-            <input
-              type="search"
-              name="search"
-              placeholder="Search here"
-              class="header-form__search"
-            />
-            <select class="header-form__select" name="select" id="#">
-              <option value="0" disabled selected>Categogies</option>
-              <option value="1">Design</option>
-              <option value="2">Minimal</option>
-              <option value="3">Home</option>
-            </select>
-            <button type="submit" class="button button--header">
-              <svg class="button__icon">
-                <use xlink:href="svg-sprite/svg-sprite.svg#search"></use>
-              </svg>
-            </button>
-          </form>
-          <div class="header-user">
-            <ul class="header-user__list">
-              <li class="header-user__item">
-                <a href="" class="header-user__link">
-                  <svg class="header-user__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#cart"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="header-user__item">
-                <a href="" class="header-user__link">
-                  <svg class="header-user__icon">
-                    <use
-                      xlink:href="svg-sprite/svg-sprite.svg#Notification"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="header-user__item">
-                <a href="" class="header-user__link">
-                  <svg class="header-user__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+          <div class="header-mobile__icon">
+            <svg class="header-mobile__user">
+              <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+            </svg>
+            <div class="header-mobile__menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="header-nav">
-      <div class="container">
-        <div class="header-nav__wrapper">
-          <div class="button button--nav">
-            <svg class="icon">
-              <use xlink:href="svg-sprite/svg-sprite.svg#burger-icon"></use>
-            </svg>
-            <span>ALL COLLECTIONS</span>
+
+    <div class="header__wrapper">
+      <div class="header-top">
+        <div class="container container--header-top">
+          <div class="header-top__wrapper">
+            <span class="header__welcome">Welcome to our online shop</span>
+            <div class="header__settings">
+              <select name="lang" id="#" class="header__lang">
+                <option>English (USD)</option>
+                <option>Russian (RUB)</option>
+              </select>
+              <span></span>
+              <a href="#" class="header__login">Login or Sign up</a>
+            </div>
           </div>
-          <div class="menu">
-            <ul class="menu__list" data-simplebar>
-              <li class="menu__item"><a href="#" class="menu__link">All</a></li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">New Arrivals</a>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="container container--header-main">
+          <div class="header-main__wrapper">
+            <div class="header__logo">
+              <img src="images/Logo.png" alt="logo" />
+            </div>
+            <form action="#" class="header-form">
+              <input
+                type="search"
+                name="search"
+                placeholder="Search here"
+                class="header-form__search"
+              />
+              <select class="header-form__select" name="select" id="#">
+                <option value="0" disabled selected>Categogies</option>
+                <option value="1">Design</option>
+                <option value="2">Minimal</option>
+                <option value="3">Home</option>
+              </select>
+              <button type="submit" class="button button--header">
+                <svg class="button__icon">
+                  <use xlink:href="svg-sprite/svg-sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="header-user">
+              <ul class="header-user__list">
+                <li class="header-user__item">
+                  <a href="" class="header-user__link">
+                    <svg class="header-user__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#cart"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-user__item">
+                  <a href="" class="header-user__link">
+                    <svg class="header-user__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#Notification"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-user__item">
+                  <a href="" class="header-user__link">
+                    <svg class="header-user__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#user"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-nav">
+        <div class="container container--header-nav">
+          <div class="header-nav__wrapper">
+            <div class="button button--nav">
+              <svg class="icon">
+                <use xlink:href="svg-sprite/svg-sprite.svg#burger-icon"></use>
+              </svg>
+              <span>ALL COLLECTIONS</span>
+            </div>
+            <div class="menu">
+              <ul class="menu__list" data-simplebar>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">All</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">New Arrivals</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">New Arrivals</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">New Arrivals</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">New Arrivals</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Hot Sale</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Furniture</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Amrature</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Tabble</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Chair</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Sofa</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Mirrors</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Stools</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Benches</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="" class="header-nav__link">HOME</a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">New Arrivals</a>
+              <li class="header-nav__item">
+                <a href="" class="header-nav__link">SHOP</a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">New Arrivals</a>
+              <li class="header-nav__item">
+                <a href="" class="header-nav__link">BLOG</a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">New Arrivals</a>
+              <li class="header-nav__item">
+                <a href="" class="header-nav__link">ABOUT</a>
               </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Hot Sale</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Furniture</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Amrature</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Tabble</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Chair</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Sofa</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Mirrors</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Stools</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Benches</a>
+              <li class="header-nav__item">
+                <a href="" class="header-nav__link">CONTACT US</a>
               </li>
             </ul>
           </div>
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link">HOME</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link">SHOP</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link">BLOG</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link">ABOUT</a>
-            </li>
-            <li class="header-nav__item">
-              <a href="" class="header-nav__link">CONTACT US</a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
@@ -212,33 +236,35 @@
             </div>
           </div>
           <!-- pagination bullet -->
-          <div class="swiper-pagination"></div>
+          <div class="promo-slider__pagination swiper-pagination"></div>
         </div>
-        <div class="swiper-container mini-slider">
-          <div class="swiper-wrapper mini-slider__wrapper">
-            <div class="swiper-slide mini-slider__item">
-              <div class="mini-slider__image">
-                <img src="images/Furniture 1.png" alt="photo: Furniture" />
+        <div class="promo-carusel">
+          <div class="swiper-container mini-slider">
+            <div class="swiper-wrapper mini-slider__wrapper">
+              <div class="swiper-slide mini-slider__item">
+                <div class="mini-slider__image">
+                  <img src="images/Furniture 1.png" alt="photo: Furniture" />
+                </div>
+                <span class="mini-slider__price">$120</span>
+                <span class="mini-slider__name">Office Desk Chair</span>
               </div>
-              <span class="mini-slider__price">$120</span>
-              <span class="mini-slider__name">Office Desk Chair</span>
-            </div>
-            <div class="swiper-slide mini-slider__item">
-              <div class="mini-slider__image">
-                <img src="images/Furniture 2.jpg" alt="photo: Furniture" />
+              <div class="swiper-slide mini-slider__item">
+                <div class="mini-slider__image">
+                  <img src="images/Furniture 2.jpg" alt="photo: Furniture" />
+                </div>
+                <span class="mini-slider__price">$120</span>
+                <span class="mini-slider__name">Office Desk Chair</span>
               </div>
-              <span class="mini-slider__price">$120</span>
-              <span class="mini-slider__name">Office Desk Chair</span>
-            </div>
-            <div class="swiper-slide mini-slider__item">
-              <div class="mini-slider__image">
-                <img src="images/Furniture 4.jpg" alt="photo: Furniture" />
+              <div class="swiper-slide mini-slider__item">
+                <div class="mini-slider__image">
+                  <img src="images/Furniture 4.jpg" alt="photo: Furniture" />
+                </div>
+                <span class="mini-slider__price">$120</span>
+                <span class="mini-slider__name">Office Desk Chair</span>
               </div>
-              <span class="mini-slider__price">$120</span>
-              <span class="mini-slider__name">Office Desk Chair</span>
             </div>
+            <!-- pagination bullet -->
           </div>
-          <!-- pagination bullet -->
         </div>
       </div>
     </div>
@@ -346,7 +372,7 @@
         <div class="tabs__content">
           <div id="tab_1" class="tabs__slider slider tabs__slider--active">
             <div class="slider__pages">
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/MinimalLCDchair.jpg"
@@ -404,7 +430,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Minimal_Wood_chair.jpg"
@@ -462,7 +488,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Minimal_iconic_chair.jpg"
@@ -520,7 +546,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img src="images/Dining_chairs.png" alt="img:Dining_chairs" />
                 </div>
@@ -575,7 +601,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Buskbo_armchair.png"
@@ -633,7 +659,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img src="images/Modern_chairs.jpg" alt="img:Modern_chairs" />
                 </div>
@@ -688,7 +714,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Elegent_wood_chair.png"
@@ -746,7 +772,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Plastic_dining_chair.jpg"
@@ -805,11 +831,10 @@
                 </div>
               </div>
             </div>
-            <div class="slider__pages"></div>
           </div>
           <div id="tab_2" class="tabs__slider slider">
             <div class="slider__pages">
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/MinimalLCDchair.jpg"
@@ -868,7 +893,7 @@
                 </div>
               </div>
 
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Minimal_Wood_chair.jpg"
@@ -927,7 +952,7 @@
                 </div>
               </div>
 
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Minimal_iconic_chair.jpg"
@@ -986,7 +1011,7 @@
                 </div>
               </div>
 
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img src="images/Dining_chairs.png" alt="img:Dining_chairs" />
                 </div>
@@ -1042,7 +1067,7 @@
                 </div>
               </div>
 
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Buskbo_armchair.png"
@@ -1105,7 +1130,7 @@
           </div>
           <div id="tab_3" class="tabs__slider slider">
             <div class="slider__pages">
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Minimal_iconic_chair.jpg"
@@ -1163,7 +1188,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img src="images/Dining_chairs.png" alt="img:Dining_chairs" />
                 </div>
@@ -1218,7 +1243,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Buskbo_armchair.png"
@@ -1276,7 +1301,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img src="images/Modern_chairs.jpg" alt="img:Modern_chairs" />
                 </div>
@@ -1331,7 +1356,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Elegent_wood_chair.png"
@@ -1389,7 +1414,7 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item card">
+              <div class="card">
                 <div class="card__image">
                   <img
                     src="images/Plastic_dining_chair.jpg"
@@ -1530,451 +1555,1520 @@
       <div class="products__title">OUR PRODUCTS</div>
       <div class="tabs tab-wrapper">
         <div class="tabs__pagination">
-          <div class="tabs__tab tabs__tab--active">All Products</div>
-          <div class="tabs__tab">Best Sellers</div>
-          <div class="tabs__tab">New Arrivals</div>
-          <div class="tabs__tab">Todays Deals</div>
+          <div data-tab="#tab_4" class="tabs__tab tabs__tab--active">
+            All Products
+          </div>
+          <div data-tab="#tab_5" class="tabs__tab">Best Sellers</div>
+          <div data-tab="#tab_6" class="tabs__tab">New Arrivals</div>
+          <div data-tab="#tab_7" class="tabs__tab">Todays Deals</div>
         </div>
         <div class="tabs__content">
-          <div class="card">
-            <div class="card__image">
-              <img
-                src="images/Minimal LCD chair-2.jpg"
-                alt="img:Minimal LCD chair"
-              />
-            </div>
-            <div class="card__desc">
-              <span class="card__style">Chair</span>
-              <span class="card__model">Minimal LCD chair</span>
-              <div class="card__footer">
-                <span class="card__price">$180</span>
-                <span class="card__price card__price--old">$250</span>
-                <div class="card__rating rating">
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
+          <div id="tab_4" class="tabs__slider slider tabs__slider--active">
+            <div class="tabs__page">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Minimal LCD chair-2.jpg"
+                    alt="img:Minimal LCD chair"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Chair</span>
+                  <span class="card__model">Minimal LCD chair</span>
+                  <div class="card__footer">
+                    <span class="card__price">$180</span>
+                    <span class="card__price card__price--old">$250</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">New</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card__label card__label--sale">New</div>
-            <div class="activities">
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img src="images/Modern Sofa.png" alt="Modern Sofa" />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Sofa</span>
+                  <span class="card__model">Modern Sofa</span>
+                  <div class="card__footer">
+                    <span class="card__price">$120</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--off">-30%</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#cart-add"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img src="images/Microfiber Sofa.jpg" alt="Microfiber Sofa" />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">sofa</span>
+                  <span class="card__model">Microfiber Sofa</span>
+                  <div class="card__footer">
+                    <span class="card__price">$130</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Wood Coffee Tables.jpg"
+                    alt="img:Wood Coffee Tables"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">tabble</span>
+                  <span class="card__model">Wood Coffee Tables</span>
+                  <div class="card__footer">
+                    <span class="card__price">$100</span>
+                    <span class="card__price card__price--old">$120</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--off">-30%</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Acacia Wood Club Chairs.png"
+                    alt="img:Acacia Wood Club Chairs"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Chair</span>
+                  <span class="card__model">Acacia Wood Club Chairs</span>
+                  <div class="card__footer">
+                    <span class="card__price">$100</span>
+                    <span class="card__price card__price--old">$120</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Amalia Cowhide Bench.png"
+                    alt="Amalia Cowhide Bench"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">bench</span>
+                  <span class="card__model">Amalia Cowhide Bench</span>
+                  <div class="card__footer">
+                    <span class="card__price">$130</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Juno-Hinged Lid Storage.jpg"
+                    alt="img:Juno-Hinged Lid Storage"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Storage</span>
+                  <span class="card__model">Juno-Hinged Lid Storage</span>
+                  <div class="card__footer">
+                    <span class="card__price">$180</span>
+                    <span class="card__price card__price--old">$250</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--new">New</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Delicia 3 Piece Living Room.jpg"
+                    alt="img:Delicia 3 Piece Living Room"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Furniture</span>
+                  <span class="card__model">Delicia 3 Piece Living Room</span>
+                  <div class="card__footer">
+                    <span class="card__price">$120</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--new">New</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card__image">
-              <img src="images/Modern Sofa.png" alt="Modern Sofa" />
-            </div>
-            <div class="card__desc">
-              <span class="card__style">Sofa</span>
-              <span class="card__model">Modern Sofa</span>
-              <div class="card__footer">
-                <span class="card__price">$120</span>
-                <span class="card__price card__price--old">$150</span>
-                <div class="card__rating rating">
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
+          <div id="tab_5" class="tabs__slider">
+            <div class="tabs__page">
+              <div class="card">
+                <div class="card__image">
+                  <img src="images/Modern Sofa.png" alt="Modern Sofa" />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Sofa</span>
+                  <span class="card__model">Modern Sofa</span>
+                  <div class="card__footer">
+                    <span class="card__price">$120</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--off">-30%</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card__label card__label--off">-30%</div>
-            <div class="activities">
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img src="images/Microfiber Sofa.jpg" alt="Microfiber Sofa" />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">sofa</span>
+                  <span class="card__model">Microfiber Sofa</span>
+                  <div class="card__footer">
+                    <span class="card__price">$130</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#cart-add"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Wood Coffee Tables.jpg"
+                    alt="img:Wood Coffee Tables"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">tabble</span>
+                  <span class="card__model">Wood Coffee Tables</span>
+                  <div class="card__footer">
+                    <span class="card__price">$100</span>
+                    <span class="card__price card__price--old">$120</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--off">-30%</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Acacia Wood Club Chairs.png"
+                    alt="img:Acacia Wood Club Chairs"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Chair</span>
+                  <span class="card__model">Acacia Wood Club Chairs</span>
+                  <div class="card__footer">
+                    <span class="card__price">$100</span>
+                    <span class="card__price card__price--old">$120</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Amalia Cowhide Bench.png"
+                    alt="Amalia Cowhide Bench"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">bench</span>
+                  <span class="card__model">Amalia Cowhide Bench</span>
+                  <div class="card__footer">
+                    <span class="card__price">$130</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Juno-Hinged Lid Storage.jpg"
+                    alt="img:Juno-Hinged Lid Storage"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Storage</span>
+                  <span class="card__model">Juno-Hinged Lid Storage</span>
+                  <div class="card__footer">
+                    <span class="card__price">$180</span>
+                    <span class="card__price card__price--old">$250</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--new">New</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Delicia 3 Piece Living Room.jpg"
+                    alt="img:Delicia 3 Piece Living Room"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Furniture</span>
+                  <span class="card__model">Delicia 3 Piece Living Room</span>
+                  <div class="card__footer">
+                    <span class="card__price">$120</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--new">New</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card__image">
-              <img src="images/Microfiber Sofa.jpg" alt="Microfiber Sofa" />
-            </div>
-            <div class="card__desc">
-              <span class="card__style">sofa</span>
-              <span class="card__model">Microfiber Sofa</span>
-              <div class="card__footer">
-                <span class="card__price">$130</span>
-                <span class="card__price card__price--old">$150</span>
-                <div class="card__rating rating">
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
+          <div id="tab_6" class="tabs__slider">
+            <div class="tabs__page">
+              <div class="card">
+                <div class="card__image">
+                  <img src="images/Microfiber Sofa.jpg" alt="Microfiber Sofa" />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">sofa</span>
+                  <span class="card__model">Microfiber Sofa</span>
+                  <div class="card__footer">
+                    <span class="card__price">$130</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card__label card__label--sale">Sale</div>
-            <div class="activities">
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Wood Coffee Tables.jpg"
+                    alt="img:Wood Coffee Tables"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">tabble</span>
+                  <span class="card__model">Wood Coffee Tables</span>
+                  <div class="card__footer">
+                    <span class="card__price">$100</span>
+                    <span class="card__price card__price--old">$120</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--off">-30%</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#cart-add"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Acacia Wood Club Chairs.png"
+                    alt="img:Acacia Wood Club Chairs"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Chair</span>
+                  <span class="card__model">Acacia Wood Club Chairs</span>
+                  <div class="card__footer">
+                    <span class="card__price">$100</span>
+                    <span class="card__price card__price--old">$120</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Amalia Cowhide Bench.png"
+                    alt="Amalia Cowhide Bench"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">bench</span>
+                  <span class="card__model">Amalia Cowhide Bench</span>
+                  <div class="card__footer">
+                    <span class="card__price">$130</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
-                </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Juno-Hinged Lid Storage.jpg"
+                    alt="img:Juno-Hinged Lid Storage"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Storage</span>
+                  <span class="card__model">Juno-Hinged Lid Storage</span>
+                  <div class="card__footer">
+                    <span class="card__price">$180</span>
+                    <span class="card__price card__price--old">$250</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--new">New</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Delicia 3 Piece Living Room.jpg"
+                    alt="img:Delicia 3 Piece Living Room"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Furniture</span>
+                  <span class="card__model">Delicia 3 Piece Living Room</span>
+                  <div class="card__footer">
+                    <span class="card__price">$120</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--new">New</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card__image">
-              <img
-                src="images/Wood Coffee Tables.jpg"
-                alt="img:Wood Coffee Tables"
-              />
-            </div>
-            <div class="card__desc">
-              <span class="card__style">tabble</span>
-              <span class="card__model">Wood Coffee Tables</span>
-              <div class="card__footer">
-                <span class="card__price">$100</span>
-                <span class="card__price card__price--old">$120</span>
-                <div class="card__rating rating">
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
+          <div id="tab_7" class="tabs__slider">
+            <div class="tabs__page">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Wood Coffee Tables.jpg"
+                    alt="img:Wood Coffee Tables"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">tabble</span>
+                  <span class="card__model">Wood Coffee Tables</span>
+                  <div class="card__footer">
+                    <span class="card__price">$100</span>
+                    <span class="card__price card__price--old">$120</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--off">-30%</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card__label card__label--off">-30%</div>
-            <div class="activities">
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#cart-add"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image">
-              <img
-                src="images/Acacia Wood Club Chairs.png"
-                alt="img:Acacia Wood Club Chairs"
-              />
-            </div>
-            <div class="card__desc">
-              <span class="card__style">Chair</span>
-              <span class="card__model">Acacia Wood Club Chairs</span>
-              <div class="card__footer">
-                <span class="card__price">$100</span>
-                <span class="card__price card__price--old">$120</span>
-                <div class="card__rating rating">
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Acacia Wood Club Chairs.png"
+                    alt="img:Acacia Wood Club Chairs"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Chair</span>
+                  <span class="card__model">Acacia Wood Club Chairs</span>
+                  <div class="card__footer">
+                    <span class="card__price">$100</span>
+                    <span class="card__price card__price--old">$120</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card__label card__label--sale">Sale</div>
-            <div class="activities">
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#cart-add"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image">
-              <img
-                src="images/Amalia Cowhide Bench.png"
-                alt="Amalia Cowhide Bench"
-              />
-            </div>
-            <div class="card__desc">
-              <span class="card__style">bench</span>
-              <span class="card__model">Amalia Cowhide Bench</span>
-              <div class="card__footer">
-                <span class="card__price">$130</span>
-                <span class="card__price card__price--old">$150</span>
-                <div class="card__rating rating">
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Amalia Cowhide Bench.png"
+                    alt="Amalia Cowhide Bench"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">bench</span>
+                  <span class="card__model">Amalia Cowhide Bench</span>
+                  <div class="card__footer">
+                    <span class="card__price">$130</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--sale">Sale</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card__label card__label--sale">Sale</div>
-            <div class="activities">
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#cart-add"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image">
-              <img
-                src="images/Juno-Hinged Lid Storage.jpg"
-                alt="img:Juno-Hinged Lid Storage"
-              />
-            </div>
-            <div class="card__desc">
-              <span class="card__style">Storage</span>
-              <span class="card__model">Juno-Hinged Lid Storage</span>
-              <div class="card__footer">
-                <span class="card__price">$180</span>
-                <span class="card__price card__price--old">$250</span>
-                <div class="card__rating rating">
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Juno-Hinged Lid Storage.jpg"
+                    alt="img:Juno-Hinged Lid Storage"
+                  />
+                </div>
+                <div class="card__desc">
+                  <span class="card__style">Storage</span>
+                  <span class="card__model">Juno-Hinged Lid Storage</span>
+                  <div class="card__footer">
+                    <span class="card__price">$180</span>
+                    <span class="card__price card__price--old">$250</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--new">New</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card__label card__label--new">New</div>
-            <div class="activities">
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#cart-add"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image">
-              <img
-                src="images/Delicia 3 Piece Living Room.jpg"
-                alt="img:Delicia 3 Piece Living Room"
-              />
-            </div>
-            <div class="card__desc">
-              <span class="card__style">Furniture</span>
-              <span class="card__model">Delicia 3 Piece Living Room</span>
-              <div class="card__footer">
-                <span class="card__price">$120</span>
-                <span class="card__price card__price--old">$150</span>
-                <div class="card__rating rating">
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
-                  <svg class="rating__icon">
-                    <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
-                  </svg>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="images/Delicia 3 Piece Living Room.jpg"
+                    alt="img:Delicia 3 Piece Living Room"
+                  />
                 </div>
-              </div>
-            </div>
-            <div class="card__label card__label--new">New</div>
-            <div class="activities">
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#cart-add"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
-                </svg>
-              </div>
-              <div class="activities__item">
-                <svg class="activities__icon">
-                  <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
-                </svg>
+                <div class="card__desc">
+                  <span class="card__style">Furniture</span>
+                  <span class="card__model">Delicia 3 Piece Living Room</span>
+                  <div class="card__footer">
+                    <span class="card__price">$120</span>
+                    <span class="card__price card__price--old">$150</span>
+                    <div class="card__rating rating">
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                      <svg class="rating__icon">
+                        <use xlink:href="svg-sprite/svg-sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__label card__label--new">New</div>
+                <div class="activities">
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#like"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use
+                        xlink:href="svg-sprite/svg-sprite.svg#cart-add"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#refresh"></use>
+                    </svg>
+                  </div>
+                  <div class="activities__item">
+                    <svg class="activities__icon">
+                      <use xlink:href="svg-sprite/svg-sprite.svg#eye"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -2055,8 +3149,8 @@
             <span class="comment-slider__spec">Co-founder</span>
           </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="comment-slider__button swiper-button-prev"></div>
+        <div class="comment-slider__button swiper-button-next"></div>
       </div>
     </div>
   </section>

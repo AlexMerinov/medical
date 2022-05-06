@@ -18,18 +18,28 @@ new Swiper('.promo-slider', {
 
    loop: true,
 
-   pagination: {
-      el: '.swiper-pagination',
+   pagination: false,
 
-      clickable: true,
+   breakpoints: {
+      768: {
+         pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+         } 
+      }
    },
 
    thumbs: {
       swiper: {
          el: '.mini-slider',
-         direction: 'vertical',
          slidesPerView: 3,
-         spaceBetween: 24,
+         spaceBetween: 16,
+         breakpoints: {
+            768: {
+               direction: 'vertical',
+               spaceBetween: 24,
+            }
+         }
       }
    }
 });
@@ -78,5 +88,16 @@ window.addEventListener('DOMContentLoaded', () => {
       });
    
    }
+
+
+   const iconMenu = document.querySelector ('.header-mobile__menu');
+   const mobileMenu = document.querySelector ('.header__wrapper')
+
+   iconMenu.addEventListener('click', () => {
+      iconMenu.classList.toggle('header-mobile__menu--active');
+      mobileMenu.classList.toggle('header__wrapper--active');
+   });
+
+   
 
 })

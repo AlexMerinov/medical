@@ -18,13 +18,6 @@
          margin-bottom: 73px;
       }
 
-      &__content {
-         display: flex;
-         align-items: center;
-         flex-wrap: wrap;
-         justify-content: space-between;
-      }
-
       &__tab {
          margin: 0 33px;
          font-weight: 600;
@@ -36,7 +29,20 @@
             color: $main-color;
          }
       }
+      &__page {
+         display: flex;
+         align-items: center;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+      &__slider {
+         display: none;
+         &--active {
+            display: block;
+         }
+      }
    }
+
 
    .card {
       &:hover {
@@ -110,7 +116,9 @@
 
 @media (max-width: 567px) {
    .products {
+      margin-bottom: 70px;
       .tabs {
+         justify-content: space-between;
          &__pagination {
             flex-wrap: wrap;
          }
@@ -131,7 +139,7 @@
                box-shadow: 0 0 5px 5px rgba(37, 44, 43, 0.2) inset;
             }
          }
-         &__content {
+         &__page {
             justify-content: center;
          }
       }
