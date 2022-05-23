@@ -1,0 +1,129 @@
+.form {
+   width: 100%;
+   height: 649px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   background-color: $primary;
+   overflow: hidden;
+   border-radius: 5px;
+   .field {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid $accent;
+      &--post {
+         height: 199px;
+      }
+      &__input {
+         display: block;
+         outline: none;
+         width: 100%;
+         height: 100%;
+         padding: 16px 20px;
+         background-color: $primary;
+         border: none;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 140%;
+         color: $light;
+         position: relative;
+         &--select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            &::after {
+               display: block;
+               content: '';
+               width: 16px;
+               height: 9px;
+               background: url(../../images/arrow_bottom.png) center / cover no-repeat;
+               position: absolute;
+               top: 20px;
+               right: 20px;
+            }
+         }
+         &--text {
+            resize: none;
+         }
+      }
+
+      &__label {
+         position: absolute;
+         top: 16px;
+         left: 20px;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 140%;
+         color: $light;
+         transition: all 0.2s ease;
+         opacity: 1;
+      }
+
+      &__input:focus + label, .field__input:not(:placeholder-shown) + label {
+         opacity: 0;
+         font-size: 14px;
+         color: #52667F;
+      }
+   }
+
+   &--page-contact {
+      height: 388px;
+      margin-bottom: 20px;
+      .field {
+         &--post {
+            height: 188px;
+         }
+      }
+   }
+
+   .btn {
+      width: 100%;
+      height: 50px;
+      background-color: $accent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      color: $primary;
+      border: none;
+      cursor: pointer;
+   }
+
+}
+
+@media screen and (min-width: 1040px) {
+
+   .form {
+      width: 491px;
+      height: 445px;
+      flex-direction: row;
+      &--page-contact {
+         height: 388px;
+         .field {
+            &--post {
+               height: 238px;
+            }
+         }
+      }
+      .field {
+         width: 50%;
+         border-right: 1px solid $accent;
+         &--post {
+            width: 100%;
+         }
+         &--subject {
+            width: 100%;
+         }
+      }
+
+      .btn {
+         transition: all 0.2s ease-in-out;
+         &:hover {
+            background-color: $secondary;
+            color: $accent;
+         }
+      }
+   }
+}

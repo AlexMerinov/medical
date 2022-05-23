@@ -1,0 +1,82 @@
+.welcome {
+   padding-top: 48px;
+   padding-bottom: 48px;
+   &__desc {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      max-width: 658px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $dark;
+      margin-bottom: 16px;
+   }
+
+   &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $secondary;
+      margin-bottom: 48px;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+
+   &__icon {
+      width: 10px;
+      height: 10px;
+      stroke: $primary;
+      margin-left: 10px;
+   }
+}
+
+.preview {
+   height: 250px;
+   position: relative;
+   overflow: hidden;
+   &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../../images/welcome_bg.png);
+   }
+}
+
+
+// .decor {
+//   height: 142px;
+//   &__line {
+//      height: 8px;
+//      background: linear-gradient(to right, $accent 0%, $accent 20%, $primary 20%, $primary 75%, $secondary 75%, $secondary 100%);
+//   } 
+// }
+
+
+
+@media screen and (min-width: 1040px) {
+   .welcome {
+      &__desc {
+         margin-bottom: 32px;
+      }
+
+      &__link {
+         margin-bottom: 61px;
+      }
+
+      .decor {
+         height: 250px;
+      }
+   }
+}

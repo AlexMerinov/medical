@@ -1,0 +1,87 @@
+.contact {
+   padding-top: 64px;
+   padding-bottom: 64px;
+   &__item {
+      min-height: 233px;
+      padding: 30px 18px 50px 30px;
+      background-color: $accent;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: end;
+      color: $primary;
+      margin-bottom: 20px;
+   }
+
+   &__icon {
+      margin-bottom: 15px;
+      .icon {
+         stroke: $primary;
+         fill: none;
+         transition: all 0.2s ease-in-out;
+         &--emer {
+            width: 40px;
+            height: 48px;
+         }
+
+         &--loc {
+            width: 30px;
+            height: 36px;
+         }
+
+         &--email {
+            width: 35px;
+            height: 30px;
+         }
+
+         &--work {
+            width: 30px;
+            height: 30px;
+         }
+      }
+   }
+
+   &__name {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: inherit;
+      margin-bottom: 8px;
+   }
+
+   &__link {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: inherit;
+      cursor: pointer;
+      margin-bottom: 5px;
+      &:hover {
+         text-decoration: underline;
+      }
+      &:nth-last-of-type(1) {
+         margin: 0;
+      }
+   }
+}
+
+@media screen and (min-width: 1040px) {
+   .contact {
+      &__item {
+         transition: all 0.2s ease-in-out;
+         &:hover {
+            background-color: $primary;
+            color: $accent;
+            .contact {
+               &__icon {
+                  .icon {
+                     stroke: $accent;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
