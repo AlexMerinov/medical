@@ -107,3 +107,5 @@ tabsBtn.forEach(function (item) {
    });
 });
 
+tabsBtn[0].click();
+
